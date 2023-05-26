@@ -39,6 +39,7 @@ body{
     left: 30px;
     right: 30px;
     border-bottom: 3px solid var(--color3);
+    z-index: 10;
   }
   
 
@@ -57,8 +58,10 @@ body{
     padding: 2px 0px;
 }
 .nav_link:hover{
-  border-bottom: 2px solid  var(--color1);;
+  border-bottom: 2px solid  var(--color1);
+  transition: all 1s;
 }
+
 
 
 .main {
@@ -89,6 +92,11 @@ body{
     font-weight:600;
     border-radius: 8px;
 
+}
+.link_works:hover{
+    background-color: var(--color2);
+    color: var(--color1);
+    transition: all 0.5s;
 }
 .none{
     display: none;
@@ -145,6 +153,7 @@ padding: 20px 20px;
 }
 .socials a:hover{
    color: var(--color3);
+   transition: color 0.5s;
 }
 
 
@@ -161,6 +170,10 @@ padding: 20px 20px;
 }
 .skills_title{
     width: 22%;
+}
+.skills_title:hover{
+    transform: translate(10px, 10px);
+    transition: all 0.5s;
 }
 
 
@@ -248,13 +261,24 @@ height: 300px;
     height: 40px;
     border-radius: 5px;
 }
+
+.box_button a:hover{
+    background-color: var(--color3);
+    color: var(--color1);
+    transition: all 0.8s;
+}
 .card_proj{ 
     border: 3px solid var(--color1);
     border-radius: 10px;
     overflow: hidden;
    
 }
-
+.card_proj:hover{
+   
+    transform: translate(5px, 5px);
+    box-shadow: 5px 5px 5px grey;
+    transition: all 0.5s;
+}
 .contacts{
     margin:0 auto;
     margin-top: 60px;
@@ -302,6 +326,11 @@ width: 100%;
     width: 200px;
     border-radius: 5px;
 }
+.submit:hover{
+    background-color: var(--color3);
+    color: var(--color1);
+    transition: all 0.8s;
+}
 .small a{
     width: 30px;
 }
@@ -324,6 +353,8 @@ padding: 10px;
 .btn {
     display: none;
 }
+
+
 @media (max-width: 800px) {
     .contacts{
         width: 80vw;
